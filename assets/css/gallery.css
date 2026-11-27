@@ -1,0 +1,1365 @@
+
+/* =========================================================
+   FRESHMART SUPERMARKET
+   GALLERY PAGE CSS
+   ========================================================= */
+
+
+/* =========================================================
+   GLOBAL
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #f7faf7;
+    color: #26352b;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.section-padding {
+    padding: 90px 0;
+}
+
+
+/* =========================================================
+   NAVBAR
+   ========================================================= */
+
+.navbar {
+    background: rgba(8, 45, 27, 0.97);
+    padding: 16px 0;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+}
+
+.navbar-brand {
+    color: #ffffff !important;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.navbar-brand i {
+    color: #ff9f1c;
+    margin-right: 7px;
+}
+
+.navbar-brand span {
+    color: #ff9f1c;
+}
+
+.navbar .nav-link {
+    color: #ffffff !important;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 8px;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.navbar .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #ff9f1c;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: 0.3s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: #ff9f1c !important;
+}
+
+.navbar .nav-link:hover::after,
+.navbar .nav-link.active::after {
+    width: 70%;
+}
+
+.navbar-toggler {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.cart-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #ff9f1c;
+    color: #ffffff;
+    padding: 11px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.cart-btn:hover {
+    background: #ffffff;
+    color: #0b512d;
+    transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   GALLERY HERO
+   ========================================================= */
+
+.gallery-hero {
+    min-height: 700px;
+
+    background:
+        linear-gradient(
+            rgba(103, 126, 116, 0.55),
+            rgba(5, 40, 24, 0.88)
+        ),
+        url("../images/store-2.jpg") center/cover no-repeat;
+
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.gallery-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at 80% 30%,
+            rgba(255, 159, 28, 0.18),
+            transparent 35%
+        );
+}
+
+.gallery-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding-top: 70px;
+
+    animation: heroFade 1s ease forwards;
+}
+
+.gallery-hero-content > span {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #ffb347;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    margin-bottom: 18px;
+}
+
+.gallery-hero-content h1 {
+    color: #ffffff;
+    font-size: clamp(42px, 6vw, 72px);
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.gallery-hero-content h1 strong {
+    color: #ff9f1c;
+}
+
+.gallery-hero-content p {
+    max-width: 700px;
+
+    color: rgba(255, 255, 255, 0.88);
+    font-size: 17px;
+    line-height: 1.8;
+
+    margin-bottom: 28px;
+}
+
+.breadcrumb-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.breadcrumb-area a {
+    color: #ff9f1c;
+}
+
+.breadcrumb-area a:hover {
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   SECTION HEADING
+   ========================================================= */
+
+.section-heading {
+    max-width: 760px;
+    margin: auto;
+}
+
+.section-heading > span,
+.small-title {
+    display: inline-block;
+
+    color: #ff9f1c;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    margin-bottom: 12px;
+}
+
+.section-heading h2 {
+    color: #0b512d;
+    font-size: clamp(32px, 4vw, 48px);
+    font-weight: 700;
+
+    margin-bottom: 15px;
+}
+
+.section-heading h2 strong {
+    color: #ff9f1c;
+}
+
+.section-heading p {
+    color: #68756d;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   GALLERY INTRO
+   ========================================================= */
+
+.gallery-intro {
+    background: #ffffff;
+}
+
+
+/* =========================================================
+   FILTER BUTTONS
+   ========================================================= */
+
+.gallery-filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    margin: 45px 0 40px;
+}
+
+.filter-btn {
+    border: 1px solid #dce8df;
+    background: #f5f9f6;
+    color: #0b512d;
+
+    padding: 10px 22px;
+    border-radius: 30px;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: #0b512d;
+    color: #ffffff;
+    border-color: #0b512d;
+
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(11, 81, 45, 0.18);
+}
+
+
+/* =========================================================
+   GALLERY CARD
+   ========================================================= */
+
+.gallery-item {
+    animation: galleryAppear 0.7s ease both;
+}
+
+.gallery-card {
+    height: 350px;
+
+    border-radius: 18px;
+    overflow: hidden;
+
+    position: relative;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 10px 35px rgba(11, 81, 45, 0.10);
+
+    transition: all 0.4s ease;
+}
+
+.gallery-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 20px 45px rgba(11, 81, 45, 0.18);
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition:
+        transform 0.7s ease,
+        filter 0.5s ease;
+}
+
+.gallery-card:hover img {
+    transform: scale(1.10);
+    filter: brightness(0.72);
+}
+
+
+/* =========================================================
+   IMAGE OVERLAY
+   ========================================================= */
+
+.gallery-overlay-card {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    min-height: 115px;
+
+    padding: 22px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    background:
+        linear-gradient(
+            transparent,
+            rgba(4, 31, 18, 0.92)
+        );
+
+    color: #ffffff;
+
+    transform: translateY(20px);
+    opacity: 0;
+
+    transition: all 0.4s ease;
+}
+
+.gallery-card:hover .gallery-overlay-card {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.gallery-overlay-card span {
+    color: #ffb347;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.gallery-overlay-card h4 {
+    margin: 5px 0 0;
+
+    color: #ffffff;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   VIEW BUTTON
+   ========================================================= */
+
+.view-btn {
+    width: 48px;
+    height: 48px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #ff9f1c;
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    font-size: 18px;
+
+    flex-shrink: 0;
+
+    transition: all 0.3s ease;
+}
+
+.view-btn:hover {
+    background: #ffffff;
+    color: #0b512d;
+
+    transform: rotate(10deg) scale(1.1);
+}
+
+
+/* =========================================================
+   EXPERIENCE SECTION
+   ========================================================= */
+
+.experience-section {
+    background: #f3f8f4;
+}
+
+.experience-image {
+    position: relative;
+}
+
+.experience-image img {
+    width: 100%;
+    height: 520px;
+
+    object-fit: cover;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 20px 50px rgba(11, 81, 45, 0.15);
+}
+
+.experience-badge {
+    position: absolute;
+
+    right: -20px;
+    bottom: 30px;
+
+    width: 145px;
+    height: 145px;
+
+    border-radius: 50%;
+
+    background: #ff9f1c;
+    color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 15px;
+
+    box-shadow:
+        0 15px 30px rgba(255, 159, 28, 0.30);
+
+    animation: badgeFloat 3s ease-in-out infinite;
+}
+
+.experience-badge i {
+    font-size: 22px;
+    margin-bottom: 6px;
+}
+
+.experience-badge strong {
+    font-size: 14px;
+}
+
+.experience-badge span {
+    font-size: 11px;
+    opacity: 0.85;
+}
+
+.experience-content {
+    padding-left: 20px;
+}
+
+.experience-content h2 {
+    color: #0b512d;
+    font-size: clamp(32px, 4vw, 46px);
+    font-weight: 700;
+    line-height: 1.2;
+
+    margin-bottom: 18px;
+}
+
+.experience-content h2 strong {
+    color: #ff9f1c;
+}
+
+.experience-content > p {
+    color: #6c786f;
+    font-size: 15px;
+    line-height: 1.9;
+
+    margin-bottom: 28px;
+}
+
+.experience-point {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+
+    margin-bottom: 22px;
+}
+
+.point-icon {
+    width: 42px;
+    height: 42px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: #dcefe2;
+    color: #0b512d;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 19px;
+
+    transition: all 0.3s ease;
+}
+
+.experience-point:hover .point-icon {
+    background: #ff9f1c;
+    color: #ffffff;
+    transform: rotate(360deg);
+}
+
+.experience-point h5 {
+    color: #0b512d;
+    font-size: 16px;
+    font-weight: 700;
+
+    margin-bottom: 5px;
+}
+
+.experience-point p {
+    color: #778179;
+    font-size: 13px;
+    line-height: 1.6;
+
+    margin: 0;
+}
+
+.experience-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    background: #0b512d;
+    color: #ffffff;
+
+    padding: 13px 24px;
+    border-radius: 30px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    margin-top: 10px;
+
+    transition: all 0.3s ease;
+}
+
+.experience-btn:hover {
+    background: #ff9f1c;
+    color: #ffffff;
+
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(255, 159, 28, 0.25);
+}
+
+.experience-btn i {
+    transition: transform 0.3s ease;
+}
+
+.experience-btn:hover i {
+    transform: translateX(5px);
+}
+
+
+/* =========================================================
+   IMAGE MODAL
+   ========================================================= */
+
+.image-modal {
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.90);
+
+    z-index: 2000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: all 0.35s ease;
+}
+
+.image-modal.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-image-container {
+    max-width: 1000px;
+    width: 100%;
+
+    text-align: center;
+
+    transform: scale(0.85);
+
+    transition: transform 0.4s ease;
+}
+
+.image-modal.show .modal-image-container {
+    transform: scale(1);
+}
+
+.modal-image-container img {
+    max-width: 100%;
+    max-height: 75vh;
+
+    border-radius: 12px;
+
+    object-fit: contain;
+
+    box-shadow:
+        0 20px 70px rgba(0, 0, 0, 0.5);
+}
+
+.modal-caption {
+    color: #ffffff;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    margin-top: 15px;
+}
+
+.modal-close {
+    position: absolute;
+
+    right: 30px;
+    top: 30px;
+
+    width: 48px;
+    height: 48px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #ff9f1c;
+    color: #ffffff;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    z-index: 5;
+
+    transition: all 0.3s ease;
+}
+
+.modal-close:hover {
+    background: #ffffff;
+    color: #0b512d;
+
+    transform: rotate(90deg);
+}
+
+
+/* =========================================================
+   CTA
+   ========================================================= */
+
+.gallery-cta {
+    padding: 90px 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0b512d,
+            #06391f
+        );
+
+    color: #ffffff;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-cta::before,
+.gallery-cta::after {
+    content: "";
+
+    position: absolute;
+
+    border: 1px solid rgba(255, 159, 28, 0.20);
+    border-radius: 50%;
+}
+
+.gallery-cta::before {
+    width: 300px;
+    height: 300px;
+
+    left: -150px;
+    top: -120px;
+}
+
+.gallery-cta::after {
+    width: 400px;
+    height: 400px;
+
+    right: -200px;
+    bottom: -250px;
+}
+
+.gallery-cta .container {
+    position: relative;
+    z-index: 2;
+}
+
+.gallery-cta span {
+    color: #ffb347;
+
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.gallery-cta h2 {
+    font-size: clamp(32px, 4vw, 48px);
+    font-weight: 700;
+
+    margin: 12px 0;
+}
+
+.gallery-cta h2 strong {
+    color: #ff9f1c;
+}
+
+.gallery-cta p {
+    max-width: 650px;
+
+    margin: 0 auto 28px;
+
+    color: rgba(255, 255, 255, 0.78);
+
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.btn-main {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 14px 28px;
+
+    background: #ff9f1c;
+    color: #ffffff;
+
+    border-radius: 30px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: all 0.35s ease;
+}
+
+.btn-main:hover {
+    background: #ffffff;
+    color: #0b512d;
+
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.20);
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.footer {
+    background: #062d1a;
+    color: #ffffff;
+
+    padding: 70px 0 25px;
+}
+
+.footer h3 {
+    font-size: 27px;
+    font-weight: 700;
+
+    margin-bottom: 15px;
+}
+
+.footer h3 i {
+    color: #ff9f1c;
+}
+
+.footer h3 span {
+    color: #ff9f1c;
+}
+
+.footer h5 {
+    font-size: 16px;
+    font-weight: 600;
+
+    margin-bottom: 18px;
+}
+
+.footer p {
+    color: rgba(255, 255, 255, 0.65);
+
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.footer a {
+    display: block;
+
+    color: rgba(255, 255, 255, 0.65);
+
+    font-size: 13px;
+
+    margin-bottom: 10px;
+
+    transition: 0.3s ease;
+}
+
+.footer a:hover {
+    color: #ff9f1c;
+    transform: translateX(4px);
+}
+
+.footer p i {
+    color: #ff9f1c;
+    margin-right: 8px;
+}
+
+.footer hr {
+    border-color: rgba(255, 255, 255, 0.12);
+
+    margin: 40px 0 20px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.footer-bottom div {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-bottom i {
+    color: rgba(255, 255, 255, 0.65);
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.footer-bottom i:hover {
+    color: #ff9f1c;
+    transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   ANIMATIONS
+   ========================================================= */
+
+@keyframes heroFade {
+
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes galleryAppear {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes badgeFloat {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 991px) {
+
+    .section-padding {
+        padding: 70px 0;
+    }
+
+    .navbar .nav-link {
+        margin: 5px 0;
+    }
+
+    .navbar-nav {
+        padding-top: 15px;
+    }
+
+    .cart-btn {
+        margin-top: 10px;
+    }
+
+    .gallery-hero {
+        min-height: 520px;
+    }
+
+    .gallery-card {
+        height: 320px;
+    }
+
+    .experience-content {
+        padding-left: 0;
+    }
+
+    .experience-badge {
+        right: 20px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+    .section-padding {
+        padding: 60px 0;
+    }
+
+    .navbar {
+        padding: 12px 0;
+    }
+
+    .navbar-brand {
+        font-size: 24px;
+    }
+
+    .gallery-hero {
+        min-height: 500px;
+    }
+
+    .gallery-hero-content {
+        padding-top: 75px;
+    }
+
+    .gallery-hero-content h1 {
+        font-size: 45px;
+    }
+
+    .gallery-hero-content p {
+        font-size: 14px;
+    }
+
+    .gallery-filters {
+        margin-top: 35px;
+    }
+
+    .gallery-card {
+        height: 300px;
+    }
+
+    .gallery-overlay-card {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .experience-image img {
+        height: 400px;
+    }
+
+    .experience-badge {
+        width: 120px;
+        height: 120px;
+
+        right: 15px;
+        bottom: 20px;
+    }
+
+    .experience-content h2 {
+        font-size: 32px;
+    }
+
+    .gallery-cta {
+        padding: 70px 20px;
+    }
+
+    .footer {
+        padding-top: 55px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .gallery-hero-content h1 {
+        font-size: 38px;
+    }
+
+    .gallery-hero-content > span {
+        font-size: 11px;
+        letter-spacing: 1.5px;
+    }
+
+    .gallery-card {
+        height: 280px;
+        border-radius: 14px;
+    }
+
+    .filter-btn {
+        padding: 9px 16px;
+        font-size: 12px;
+    }
+
+    .gallery-filters {
+        gap: 7px;
+    }
+
+    .experience-image img {
+        height: 330px;
+        border-radius: 18px;
+    }
+
+    .experience-badge {
+        width: 105px;
+        height: 105px;
+    }
+
+    .experience-badge strong {
+        font-size: 12px;
+    }
+
+    .modal-close {
+        top: 15px;
+        right: 15px;
+    }
+
+    .image-modal {
+        padding: 15px;
+    }
+
+}
+
+
+
+/* =========================================================
+   FRESHMART GALLERY
+   REDUCE PADDING FOR EVERY SECTION
+========================================================= */
+
+/* ---------- GENERAL SECTIONS ---------- */
+
+.section-padding {
+    padding: 45px 0 !important;
+}
+
+
+/* ---------- GALLERY INTRO ---------- */
+
+.gallery-intro {
+    padding-top: 45px !important;
+    padding-bottom: 45px !important;
+}
+
+
+/* ---------- EXPERIENCE SECTION ---------- */
+
+.experience-section {
+    padding-top: 45px !important;
+    padding-bottom: 45px !important;
+}
+
+
+/* ---------- GALLERY CTA ---------- */
+
+.gallery-cta {
+    padding-top: 45px !important;
+    padding-bottom: 45px !important;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+.footer {
+    padding-top: 40px !important;
+    padding-bottom: 15px !important;
+}
+
+
+/* =========================================================
+   REDUCE INTERNAL SPACING
+========================================================= */
+
+/* Section heading */
+
+.section-heading > span,
+.small-title {
+    margin-bottom: 7px !important;
+}
+
+.section-heading h2 {
+    margin-bottom: 8px !important;
+}
+
+.section-heading p {
+    margin-bottom: 0 !important;
+}
+
+
+/* Gallery filters */
+
+.gallery-filters {
+    margin-top: 22px !important;
+    margin-bottom: 22px !important;
+}
+
+
+/* Experience content */
+
+.experience-content {
+    padding-left: 15px !important;
+}
+
+.experience-content h2 {
+    margin-bottom: 12px !important;
+}
+
+.experience-content > p {
+    margin-bottom: 18px !important;
+}
+
+.experience-point {
+    margin-bottom: 14px !important;
+}
+
+
+/* CTA */
+
+.gallery-cta h2 {
+    margin-top: 7px !important;
+    margin-bottom: 7px !important;
+}
+
+.gallery-cta p {
+    margin-bottom: 18px !important;
+}
+
+
+/* Footer */
+
+.footer h3 {
+    margin-bottom: 10px !important;
+}
+
+.footer h5 {
+    margin-bottom: 12px !important;
+}
+
+.footer hr {
+    margin-top: 25px !important;
+    margin-bottom: 15px !important;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .section-padding {
+        padding: 40px 0 !important;
+    }
+
+    .gallery-intro,
+    .experience-section {
+        padding-top: 40px !important;
+        padding-bottom: 40px !important;
+    }
+
+    .gallery-cta {
+        padding-top: 40px !important;
+        padding-bottom: 40px !important;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .section-padding {
+        padding: 35px 0 !important;
+    }
+
+    .gallery-intro,
+    .experience-section {
+        padding-top: 35px !important;
+        padding-bottom: 35px !important;
+    }
+
+    .gallery-cta {
+        padding-top: 35px !important;
+        padding-bottom: 35px !important;
+    }
+
+    .gallery-filters {
+        margin-top: 18px !important;
+        margin-bottom: 18px !important;
+    }
+
+    .experience-content {
+        padding-left: 0 !important;
+    }
+
+    .experience-content h2 {
+        margin-bottom: 10px !important;
+    }
+
+    .experience-content > p {
+        margin-bottom: 15px !important;
+    }
+
+    .experience-point {
+        margin-bottom: 12px !important;
+    }
+
+    .footer {
+        padding-top: 35px !important;
+        padding-bottom: 15px !important;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .section-padding {
+        padding: 30px 0 !important;
+    }
+
+    .gallery-intro,
+    .experience-section {
+        padding-top: 30px !important;
+        padding-bottom: 30px !important;
+    }
+
+    .gallery-cta {
+        padding-top: 30px !important;
+        padding-bottom: 30px !important;
+    }
+
+    .footer {
+        padding-top: 30px !important;
+        padding-bottom: 12px !important;
+    }
+}

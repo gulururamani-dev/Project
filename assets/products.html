@@ -1,0 +1,1906 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Products | FreshMart Supermarket</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Products CSS -->
+    <link rel="stylesheet" href="css/products.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">
+
+                <i class="bi bi-cart3"></i>
+
+                Fresh<span>Mart</span>
+
+            </a>
+
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <div
+                class="collapse navbar-collapse"
+                id="mainNavbar">
+
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="index.html">
+
+                            Home
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="about.html">
+
+                            About
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link active"
+                            href="products.html">
+
+                            Products
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="gallery.html">
+
+                            Gallery
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="contact.html">
+
+                            Contact
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item ms-lg-3">
+
+                        <a
+                            href="#products"
+                            class="cart-btn">
+
+                            <i class="bi bi-cart"></i>
+
+                            Shop Now
+
+                        </a>
+
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- =====================================================
+         PAGE HERO
+    ====================================================== -->
+
+    <section class="products-hero">
+
+        <div class="products-overlay"></div>
+
+        <div class="container">
+
+            <div class="products-hero-content">
+
+
+                <span>
+
+                    <i class="bi bi-basket2"></i>
+
+                    FRESH • QUALITY • VALUE
+
+                </span>
+
+
+                <h1>
+
+                    Our <strong>Products</strong>
+
+                </h1>
+
+
+                <p>
+
+                    Discover fresh produce, groceries, dairy products,
+                    beverages and everyday essentials all in one place.
+
+                </p>
+
+
+                <div class="breadcrumb-area">
+
+                    <a href="index.html">
+
+                        Home
+
+                    </a>
+
+
+                    <i class="bi bi-chevron-right"></i>
+
+
+                    <span>
+
+                        Products
+
+                    </span>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         PRODUCT INTRO
+    ====================================================== -->
+
+    <section class="product-intro section-padding">
+
+        <div class="container">
+
+            <div class="section-heading text-center">
+
+
+                <span>
+
+                    SHOP WITH EASE
+
+                </span>
+
+
+                <h2>
+
+                    Everything You Need,
+
+                    <strong>
+                        All in One Place
+                    </strong>
+
+                </h2>
+
+
+                <p>
+
+                    Browse our carefully selected range of fresh food,
+                    household essentials and everyday products.
+
+                </p>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         PRODUCTS SECTION
+    ====================================================== -->
+
+    <section
+        class="products-section"
+        id="products">
+
+        <div class="container">
+
+
+            <!-- SEARCH -->
+
+            <div class="product-search">
+
+                <div class="search-box">
+
+                    <i class="bi bi-search"></i>
+
+                    <input
+                        type="text"
+                        id="productSearch"
+                        placeholder="Search products...">
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CATEGORY FILTER -->
+
+            <div class="category-filter text-center">
+
+
+                <button
+                    class="filter-btn active"
+                    data-filter="all">
+
+                    All Products
+
+                </button>
+
+
+                <button
+                    class="filter-btn"
+                    data-filter="fruits">
+
+                    Fruits
+
+                </button>
+
+
+                <button
+                    class="filter-btn"
+                    data-filter="vegetables">
+
+                    Vegetables
+
+                </button>
+
+
+                <button
+                    class="filter-btn"
+                    data-filter="dairy">
+
+                    Dairy
+
+                </button>
+
+
+                <button
+                    class="filter-btn"
+                    data-filter="grocery">
+
+                    Grocery
+
+                </button>
+
+
+                <button
+                    class="filter-btn"
+                    data-filter="beverages">
+
+                    Beverages
+
+                </button>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 PRODUCT GRID
+            ================================================== -->
+
+            <div
+                class="row g-4 mt-4"
+                id="productGrid">
+
+
+                <!-- =================================================
+                     PRODUCT 1
+                ================================================== -->
+
+                <div
+                    class="col-sm-6 col-lg-4 col-xl-3 product-item"
+                    data-category="fruits">
+
+                    <div class="product-card">
+
+
+                        <div class="product-image">
+
+                            <span class="offer-badge">
+
+                                20% OFF
+
+                            </span>
+
+
+                            <img
+                                src="images/fruits.jpg"
+                                alt="Fresh Fruits">
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <small>
+                                Fresh Fruits
+                            </small>
+
+
+                            <h4>
+                                Fresh Fruits Basket
+                            </h4>
+
+
+                            <p>
+                                Seasonal fruits selected for freshness.
+                            </p>
+
+
+                            <div class="product-price">
+
+                                <strong>
+                                    ₹299
+                                </strong>
+
+                                <del>
+                                    ₹375
+                                </del>
+
+                            </div>
+
+
+                            <button class="product-btn">
+
+                                Add to Cart
+
+                                <i class="bi bi-cart-plus"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     PRODUCT 2
+                ================================================== -->
+
+                <div
+                    class="col-sm-6 col-lg-4 col-xl-3 product-item"
+                    data-category="vegetables">
+
+                    <div class="product-card">
+
+
+                        <div class="product-image">
+
+                            <span class="offer-badge">
+                                15% OFF
+                            </span>
+
+
+                            <img
+                                src="images/vegetables.jpg"
+                                alt="Fresh Vegetables">
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <small>
+                                Fresh Vegetables
+                            </small>
+
+
+                            <h4>
+                                Farm Fresh Vegetables
+                            </h4>
+
+
+                            <p>
+                                Fresh vegetables for healthy meals.
+                            </p>
+
+
+                            <div class="product-price">
+
+                                <strong>
+                                    ₹199
+                                </strong>
+
+                                <del>
+                                    ₹235
+                                </del>
+
+                            </div>
+
+
+                            <button class="product-btn">
+
+                                Add to Cart
+
+                                <i class="bi bi-cart-plus"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     PRODUCT 3
+                ================================================== -->
+
+                <div
+                    class="col-sm-6 col-lg-4 col-xl-3 product-item"
+                    data-category="dairy">
+
+                    <div class="product-card">
+
+
+                        <div class="product-image">
+
+                            <span class="offer-badge">
+                                10% OFF
+                            </span>
+
+
+                            <img
+                                src="images/dairy.jpg"
+                                alt="Fresh Dairy Products">
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <small>
+                                Dairy
+                            </small>
+
+
+                            <h4>
+                                Fresh Dairy Pack
+                            </h4>
+
+
+                            <p>
+                                Quality milk and dairy essentials.
+                            </p>
+
+
+                            <div class="product-price">
+
+                                <strong>
+                                    ₹249
+                                </strong>
+
+                                <del>
+                                    ₹275
+                                </del>
+
+                            </div>
+
+
+                            <button class="product-btn">
+
+                                Add to Cart
+
+                                <i class="bi bi-cart-plus"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     PRODUCT 4
+                ================================================== -->
+
+                <div
+                    class="col-sm-6 col-lg-4 col-xl-3 product-item"
+                    data-category="grocery">
+
+                    <div class="product-card">
+
+
+                        <div class="product-image">
+
+                            <span class="offer-badge">
+                                15% OFF
+                            </span>
+
+
+                            <img
+                                src="images/grocery.jpg"
+                                alt="Grocery Pack">
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <small>
+                                Grocery
+                            </small>
+
+
+                            <h4>
+                                Premium Grocery Pack
+                            </h4>
+
+
+                            <p>
+                                Everyday grocery essentials for your home.
+                            </p>
+
+
+                            <div class="product-price">
+
+                                <strong>
+                                    ₹499
+                                </strong>
+
+                                <del>
+                                    ₹590
+                                </del>
+
+                            </div>
+
+
+                            <button class="product-btn">
+
+                                Add to Cart
+
+                                <i class="bi bi-cart-plus"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     PRODUCT 5
+                ================================================== -->
+
+                <div
+                    class="col-sm-6 col-lg-4 col-xl-3 product-item"
+                    data-category="beverages">
+
+                    <div class="product-card">
+
+
+                        <div class="product-image">
+
+                            <span class="offer-badge">
+                                10% OFF
+                            </span>
+
+
+                            <img
+                                src="images/beverages.jpg"
+                                alt="Fresh Beverages">
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <small>
+                                Beverages
+                            </small>
+
+
+                            <h4>
+                                Refreshing Beverages
+                            </h4>
+
+
+                            <p>
+                                Refreshing drinks for every occasion.
+                            </p>
+
+
+                            <div class="product-price">
+
+                                <strong>
+                                    ₹179
+                                </strong>
+
+                                <del>
+                                    ₹199
+                                </del>
+
+                            </div>
+
+
+                            <button class="product-btn">
+
+                                Add to Cart
+
+                                <i class="bi bi-cart-plus"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     PRODUCT 6
+                ================================================== -->
+
+                <div
+                    class="col-sm-6 col-lg-4 col-xl-3 product-item"
+                    data-category="fruits">
+
+                    <div class="product-card">
+
+
+                        <div class="product-image">
+
+                            <span class="offer-badge">
+                                12% OFF
+                            </span>
+
+
+                            <img
+                                src="images/fruits.jpg"
+                                alt="Premium Fruits">
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <small>
+                                Fresh Fruits
+                            </small>
+
+
+                            <h4>
+                                Premium Fruit Selection
+                            </h4>
+
+
+                            <p>
+                                Delicious fruits for your family.
+                            </p>
+
+
+                            <div class="product-price">
+
+                                <strong>
+                                    ₹349
+                                </strong>
+
+                                <del>
+                                    ₹399
+                                </del>
+
+                            </div>
+
+
+                            <button class="product-btn">
+
+                                Add to Cart
+
+                                <i class="bi bi-cart-plus"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     PRODUCT 7
+                ================================================== -->
+
+                <div
+                    class="col-sm-6 col-lg-4 col-xl-3 product-item"
+                    data-category="vegetables">
+
+                    <div class="product-card">
+
+
+                        <div class="product-image">
+
+                            <span class="offer-badge">
+                                18% OFF
+                            </span>
+
+
+                            <img
+                                src="images/vegetables.jpg"
+                                alt="Green Vegetables">
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <small>
+                                Vegetables
+                            </small>
+
+
+                            <h4>
+                                Healthy Green Pack
+                            </h4>
+
+
+                            <p>
+                                Fresh greens for nutritious meals.
+                            </p>
+
+
+                            <div class="product-price">
+
+                                <strong>
+                                    ₹159
+                                </strong>
+
+                                <del>
+                                    ₹195
+                                </del>
+
+                            </div>
+
+
+                            <button class="product-btn">
+
+                                Add to Cart
+
+                                <i class="bi bi-cart-plus"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     PRODUCT 8
+                ================================================== -->
+
+                <div
+                    class="col-sm-6 col-lg-4 col-xl-3 product-item"
+                    data-category="dairy">
+
+                    <div class="product-card">
+
+
+                        <div class="product-image">
+
+                            <span class="offer-badge">
+                                8% OFF
+                            </span>
+
+
+                            <img
+                                src="images/dairy.jpg"
+                                alt="Dairy Essentials">
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <small>
+                                Dairy
+                            </small>
+
+
+                            <h4>
+                                Daily Dairy Essentials
+                            </h4>
+
+
+                            <p>
+                                Fresh dairy products for every home.
+                            </p>
+
+
+                            <div class="product-price">
+
+                                <strong>
+                                    ₹229
+                                </strong>
+
+                                <del>
+                                    ₹249
+                                </del>
+
+                            </div>
+
+
+                            <button class="product-btn">
+
+                                Add to Cart
+
+                                <i class="bi bi-cart-plus"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     PRODUCT 9 - HIDDEN INITIALLY
+                ================================================== -->
+
+                <div
+                    class="col-sm-6 col-lg-4 col-xl-3 product-item extra-product"
+                    data-category="grocery">
+
+                    <div class="product-card">
+
+
+                        <div class="product-image">
+
+                            <img
+                                src="images/grocery.jpg"
+                                alt="Kitchen Essentials">
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <small>
+                                Grocery
+                            </small>
+
+
+                            <h4>
+                                Kitchen Essentials
+                            </h4>
+
+
+                            <p>
+                                Useful essentials for your kitchen.
+                            </p>
+
+
+                            <div class="product-price">
+
+                                <strong>
+                                    ₹399
+                                </strong>
+
+                            </div>
+
+
+                            <button class="product-btn">
+
+                                Add to Cart
+
+                                <i class="bi bi-cart-plus"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     PRODUCT 10 - HIDDEN INITIALLY
+                ================================================== -->
+
+                <div
+                    class="col-sm-6 col-lg-4 col-xl-3 product-item extra-product"
+                    data-category="beverages">
+
+                    <div class="product-card">
+
+
+                        <div class="product-image">
+
+                            <img
+                                src="images/beverages.jpg"
+                                alt="Cold Beverages">
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <small>
+                                Beverages
+                            </small>
+
+
+                            <h4>
+                                Cool Drinks Pack
+                            </h4>
+
+
+                            <p>
+                                Refreshing beverages for your family.
+                            </p>
+
+
+                            <div class="product-price">
+
+                                <strong>
+                                    ₹299
+                                </strong>
+
+                            </div>
+
+
+                            <button class="product-btn">
+
+                                Add to Cart
+
+                                <i class="bi bi-cart-plus"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     PRODUCT 11 - HIDDEN INITIALLY
+                ================================================== -->
+
+                <div
+                    class="col-sm-6 col-lg-4 col-xl-3 product-item extra-product"
+                    data-category="fruits">
+
+                    <div class="product-card">
+
+
+                        <div class="product-image">
+
+                            <img
+                                src="images/fruits.jpg"
+                                alt="Healthy Fruit Pack">
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <small>
+                                Fresh Fruits
+                            </small>
+
+
+                            <h4>
+                                Healthy Fruit Pack
+                            </h4>
+
+
+                            <p>
+                                A colorful selection of fresh fruits.
+                            </p>
+
+
+                            <div class="product-price">
+
+                                <strong>
+                                    ₹279
+                                </strong>
+
+                            </div>
+
+
+                            <button class="product-btn">
+
+                                Add to Cart
+
+                                <i class="bi bi-cart-plus"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     PRODUCT 12 - HIDDEN INITIALLY
+                ================================================== -->
+
+                <div
+                    class="col-sm-6 col-lg-4 col-xl-3 product-item extra-product"
+                    data-category="grocery">
+
+                    <div class="product-card">
+
+
+                        <div class="product-image">
+
+                            <span class="offer-badge">
+                                20% OFF
+                            </span>
+
+
+                            <img
+                                src="images/grocery.jpg"
+                                alt="Monthly Grocery Pack">
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <small>
+                                Grocery
+                            </small>
+
+
+                            <h4>
+                                Monthly Grocery Pack
+                            </h4>
+
+
+                            <p>
+                                Everyday essentials for your family.
+                            </p>
+
+
+                            <div class="product-price">
+
+                                <strong>
+                                    ₹699
+                                </strong>
+
+                                <del>
+                                    ₹875
+                                </del>
+
+                            </div>
+
+
+                            <button class="product-btn">
+
+                                Add to Cart
+
+                                <i class="bi bi-cart-plus"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 VIEW MORE BUTTON
+            ================================================== -->
+
+            <div
+                class="view-more-wrapper"
+                id="viewMoreWrapper">
+
+                <button
+                    type="button"
+                    id="viewMoreBtn"
+                    class="view-more-btn">
+
+                    <span>
+                        View More Products
+                    </span>
+
+                    <i class="bi bi-chevron-down"></i>
+
+                </button>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 NO RESULTS
+            ================================================== -->
+
+            <div
+                id="noProducts"
+                class="no-products">
+
+                <i class="bi bi-search"></i>
+
+                <h4>
+                    No Products Found
+                </h4>
+
+                <p>
+                    Try searching for another product.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         SHOPPING BENEFITS
+    ====================================================== -->
+
+    <section class="shopping-benefits section-padding">
+
+        <div class="container">
+
+            <div class="row g-4">
+
+
+                <div class="col-md-4">
+
+                    <div class="benefit-card">
+
+                        <i class="bi bi-shield-check"></i>
+
+                        <div>
+
+                            <h5>
+                                Quality Assured
+                            </h5>
+
+                            <p>
+                                Carefully selected products
+                                you can trust.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="col-md-4">
+
+                    <div class="benefit-card">
+
+                        <i class="bi bi-tags"></i>
+
+                        <div>
+
+                            <h5>
+                                Great Prices
+                            </h5>
+
+                            <p>
+                                Enjoy excellent value on
+                                everyday essentials.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="col-md-4">
+
+                    <div class="benefit-card">
+
+                        <i class="bi bi-truck"></i>
+
+                        <div>
+
+                            <h5>
+                                Fast Delivery
+                            </h5>
+
+                            <p>
+                                Convenient delivery for
+                                your shopping needs.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         CTA
+    ====================================================== -->
+
+    <section class="products-cta">
+
+        <div class="container text-center">
+
+
+            <span>
+                FRESH SHOPPING STARTS HERE
+            </span>
+
+
+            <h2>
+
+                Good Products.
+
+                <strong>
+                    Great Value.
+                </strong>
+
+            </h2>
+
+
+            <p>
+                Shop FreshMart and make your everyday shopping easier.
+            </p>
+
+
+            <a
+                href="contact.html"
+                class="btn-main">
+
+                Contact Us
+
+                <i class="bi bi-arrow-right"></i>
+
+            </a>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+
+            <div class="row g-4">
+
+
+                <div class="col-lg-4">
+
+                    <h3>
+
+                        <i class="bi bi-cart3"></i>
+
+                        Fresh<span>Mart</span>
+
+                    </h3>
+
+
+                    <p>
+
+                        Your trusted supermarket for fresh,
+                        quality and affordable products.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="col-6 col-lg-2">
+
+                    <h5>
+                        Quick Links
+                    </h5>
+
+
+                    <a href="index.html">
+                        Home
+                    </a>
+
+                    <a href="about.html">
+                        About
+                    </a>
+
+                    <a href="products.html">
+                        Products
+                    </a>
+
+                    <a href="gallery.html">
+                        Gallery
+                    </a>
+                    <a href="contact.html">
+                        contact
+                    </a>
+
+                </div>
+
+
+
+                <div class="col-6 col-lg-2">
+
+                    <h5>
+                        Categories
+                    </h5>
+
+
+                    <a href="#products">
+                        Fruits
+                    </a>
+
+                    <a href="#products">
+                        Vegetables
+                    </a>
+
+                    <a href="#products">
+                        Dairy
+                    </a>
+
+                    <a href="#products">
+                        Grocery
+                    </a>
+
+                </div>
+
+
+
+                <div class="col-lg-4">
+
+                    <h5>
+                        Contact
+                    </h5>
+
+
+                    <p>
+
+                        <i class="bi bi-geo-alt"></i>
+
+                        Hyderabad, Telangana
+
+                    </p>
+
+
+                    <p>
+
+                        <i class="bi bi-telephone"></i>
+
+                        +91 98765 43210
+
+                    </p>
+
+
+                    <p>
+
+                        <i class="bi bi-envelope"></i>
+
+                        freshmart@gmail.com
+
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+
+            <hr>
+
+
+            <div class="footer-bottom">
+
+
+                <p>
+
+                    © 2026 FreshMart Supermarket.
+                    All Rights Reserved.
+
+                </p>
+
+
+                <div>
+
+                    <i class="bi bi-facebook"></i>
+
+                    <i class="bi bi-instagram"></i>
+
+                    <i class="bi bi-whatsapp"></i>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         BOOTSTRAP JS
+    ====================================================== -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+
+    <!-- Common JavaScript -->
+
+    <script src="js/script.js"></script>
+
+
+
+    <!-- =====================================================
+         PRODUCTS JAVASCRIPT
+    ====================================================== -->
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+
+            /* =================================================
+               ELEMENTS
+            ================================================= */
+
+            const filterButtons =
+                document.querySelectorAll(".filter-btn");
+
+            const products =
+                document.querySelectorAll(".product-item");
+
+            const extraProducts =
+                document.querySelectorAll(".extra-product");
+
+            const searchInput =
+                document.getElementById("productSearch");
+
+            const noProducts =
+                document.getElementById("noProducts");
+
+            const viewMoreBtn =
+                document.getElementById("viewMoreBtn");
+
+            const viewMoreWrapper =
+                document.getElementById("viewMoreWrapper");
+
+
+            /* =================================================
+               VARIABLES
+            ================================================= */
+
+            let selectedCategory = "all";
+
+            let showAllProducts = false;
+
+
+
+            /* =================================================
+               INITIAL STATE
+            ================================================= */
+
+            extraProducts.forEach(function (product) {
+
+                product.style.display = "none";
+
+            });
+
+
+
+            /* =================================================
+               VIEW MORE / VIEW LESS
+            ================================================= */
+
+            if (viewMoreBtn) {
+
+                viewMoreBtn.addEventListener("click", function () {
+
+                    showAllProducts = !showAllProducts;
+
+                    if (showAllProducts) {
+
+                        extraProducts.forEach(function (product) {
+
+                            product.style.display = "";
+
+                        });
+
+
+                        viewMoreBtn.innerHTML = `
+                            <span>View Less Products</span>
+                            <i class="bi bi-chevron-up"></i>
+                        `;
+
+
+                        viewMoreBtn.classList.add("expanded");
+
+                    }
+
+                    else {
+
+                        extraProducts.forEach(function (product) {
+
+                            product.style.display = "none";
+
+                        });
+
+
+                        viewMoreBtn.innerHTML = `
+                            <span>View More Products</span>
+                            <i class="bi bi-chevron-down"></i>
+                        `;
+
+
+                        viewMoreBtn.classList.remove("expanded");
+
+
+                        /* Scroll slightly back to products */
+
+                        const productGrid =
+                            document.getElementById("productGrid");
+
+                        if (productGrid) {
+
+                            productGrid.scrollIntoView({
+                                behavior: "smooth",
+                                block: "start"
+                            });
+
+                        }
+
+                    }
+
+                });
+
+            }
+
+
+
+            /* =================================================
+               CATEGORY FILTER
+            ================================================= */
+
+            filterButtons.forEach(function (button) {
+
+                button.addEventListener("click", function () {
+
+
+                    filterButtons.forEach(function (btn) {
+
+                        btn.classList.remove("active");
+
+                    });
+
+
+                    this.classList.add("active");
+
+
+                    selectedCategory =
+                        this.getAttribute("data-filter");
+
+
+                    filterProducts();
+
+                });
+
+            });
+
+
+
+            /* =================================================
+               SEARCH
+            ================================================= */
+
+            if (searchInput) {
+
+                searchInput.addEventListener(
+                    "input",
+                    function () {
+
+                        filterProducts();
+
+                    }
+                );
+
+            }
+
+
+
+            /* =================================================
+               FILTER FUNCTION
+            ================================================= */
+
+            function filterProducts() {
+
+
+                const searchText =
+                    searchInput.value
+                        .toLowerCase()
+                        .trim();
+
+
+                let visibleCount = 0;
+
+
+                products.forEach(function (product) {
+
+
+                    const category =
+                        product.getAttribute("data-category");
+
+
+                    const productName =
+                        product
+                            .querySelector("h4")
+                            .textContent
+                            .toLowerCase();
+
+
+                    const productDescription =
+                        product
+                            .querySelector("p")
+                            .textContent
+                            .toLowerCase();
+
+
+                    const categoryMatch =
+                        selectedCategory === "all" ||
+                        category === selectedCategory;
+
+
+                    const searchMatch =
+                        productName.includes(searchText) ||
+                        productDescription.includes(searchText);
+
+
+
+                    /* =========================================
+                       MATCHING PRODUCT
+                    ========================================= */
+
+                    if (categoryMatch && searchMatch) {
+
+
+                        /*
+                         * First 8 products are always allowed
+                         */
+
+                        const isExtra =
+                            product.classList.contains(
+                                "extra-product"
+                            );
+
+
+                        if (isExtra && !showAllProducts) {
+
+                            product.style.display = "none";
+
+                        }
+
+                        else {
+
+                            product.style.display = "";
+
+                            visibleCount++;
+
+                        }
+
+                    }
+
+
+                    /* =========================================
+                       NON-MATCHING PRODUCT
+                    ========================================= */
+
+                    else {
+
+                        product.style.display = "none";
+
+                    }
+
+                });
+
+
+
+                /* =================================================
+                   NO PRODUCTS MESSAGE
+                ================================================= */
+
+                if (visibleCount === 0) {
+
+                    noProducts.classList.add("show");
+
+                    if (viewMoreWrapper) {
+
+                        viewMoreWrapper.style.display = "none";
+
+                    }
+
+                }
+
+                else {
+
+                    noProducts.classList.remove("show");
+
+
+                    /*
+                     * Show View More button only when
+                     * there are hidden extra products.
+                     */
+
+                    if (
+                        viewMoreWrapper &&
+                        !showAllProducts
+                    ) {
+
+                        viewMoreWrapper.style.display =
+                            "flex";
+
+                    }
+
+                    else if (
+                        viewMoreWrapper &&
+                        showAllProducts
+                    ) {
+
+                        viewMoreWrapper.style.display =
+                            "flex";
+
+                    }
+
+                }
+
+
+            }
+
+
+        });
+
+    </script>
+
+
+</body>
+
+</html>

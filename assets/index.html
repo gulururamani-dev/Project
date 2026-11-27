@@ -1,0 +1,622 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FreshMart Supermarket | Fresh & Quality Products</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Home CSS -->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-cart3"></i>
+                Fresh<span>Mart</span>
+            </a>
+
+            <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Products</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Gallery</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                    <li class="nav-item ms-lg-3">
+                        <a href="products.html" class="cart-btn">
+                            <i class="bi bi-cart"></i> Shop Now
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero-section">
+
+        <div class="hero-overlay"></div>
+
+        <div class="container hero-content">
+
+            <div class="row align-items-center min-vh-100">
+
+                <div class="col-lg-7">
+
+                    <span class="hero-tag">
+                        <i class="bi bi-stars"></i>
+                        Fresh • Healthy • Affordable
+                    </span>
+
+                    <h1>
+                        Everything Fresh,
+                        <span>Everything You Need.</span>
+                    </h1>
+
+                    <p>
+                        Welcome to FreshMart Supermarket. Find fresh
+                        fruits, vegetables, groceries, dairy products and
+                        everyday essentials at the best prices.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="products.html" class="btn-main">
+                            Shop Products
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+
+                        <a href="#offers" class="btn-outline">
+                            View Offers
+                        </a>
+
+                    </div>
+
+                    <div class="hero-features">
+
+                        <div>
+                            <i class="bi bi-truck"></i>
+                            <span>Fast Delivery</span>
+                        </div>
+
+                        <div>
+                            <i class="bi bi-shield-check"></i>
+                            <span>Quality Products</span>
+                        </div>
+
+                        <div>
+                            <i class="bi bi-tags"></i>
+                            <span>Best Prices</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= CATEGORIES ================= -->
+    <section class="categories-section section-padding">
+
+        <div class="container">
+
+            <div class="section-heading text-center">
+
+                <span>SHOP EASILY</span>
+
+                <h2>Shop By Category</h2>
+
+                <p>
+                    Everything you need for your everyday shopping.
+                </p>
+
+            </div>
+
+            <div class="row g-4 mt-3">
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="bi bi-apple"></i>
+                        </div>
+                        <h5>Fruits</h5>
+                        <p>Fresh & Healthy</p>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="bi bi-basket2"></i>
+                        </div>
+                        <h5>Vegetables</h5>
+                        <p>Farm Fresh</p>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="bi bi-cup-hot"></i>
+                        </div>
+                        <h5>Dairy</h5>
+                        <p>Fresh Dairy</p>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="bi bi-bag"></i>
+                        </div>
+                        <h5>Grocery</h5>
+                        <p>Daily Needs</p>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="bi bi-cup-straw"></i>
+                        </div>
+                        <h5>Beverages</h5>
+                        <p>Cool & Fresh</p>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="bi bi-droplet"></i>
+                        </div>
+                        <h5>Personal Care</h5>
+                        <p>Daily Care</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= OFFERS ================= -->
+    <section id="offers" class="offers-section section-padding">
+
+        <div class="container">
+
+            <div class="section-heading text-center">
+
+                <span>BEST DEALS</span>
+
+                <h2>Today's Special Offers</h2>
+
+                <p>
+                    Save more on your favorite everyday products.
+                </p>
+
+            </div>
+
+            <div class="row g-4 mt-3">
+
+                <!-- Product 1 -->
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="product-card">
+
+                        <div class="offer-badge">20% OFF</div>
+
+                        <div class="product-image">
+                            <img src="images/fruits.jpg"
+                                alt="Fresh Fruits">
+                        </div>
+
+                        <div class="product-info">
+
+                            <small>Fresh Produce</small>
+
+                            <h4>Fresh Fruits Basket</h4>
+
+                            <p>
+                                Fresh seasonal fruits for your family.
+                            </p>
+
+                            <div class="price">
+                                <span>₹299</span>
+                                <del>₹375</del>
+                            </div>
+
+                            <a href="products.html" class="product-btn">
+                                Add to Cart
+                                <i class="bi bi-cart-plus"></i>
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- Product 2 -->
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="product-card">
+
+                        <div class="offer-badge">15% OFF</div>
+
+                        <div class="product-image">
+                            <img src="images/grocery.jpg"
+                                alt="Grocery Products">
+                        </div>
+
+                        <div class="product-info">
+
+                            <small>Grocery</small>
+
+                            <h4>Premium Grocery Pack</h4>
+
+                            <p>
+                                Essential grocery products for your home.
+                            </p>
+
+                            <div class="price">
+                                <span>₹499</span>
+                                <del>₹590</del>
+                            </div>
+
+                            <a href="products.html" class="product-btn">
+                                Add to Cart
+                                <i class="bi bi-cart-plus"></i>
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- Product 3 -->
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="product-card">
+
+                        <div class="offer-badge">10% OFF</div>
+
+                        <div class="product-image">
+                            <img src="images/dairy.jpg"
+                                alt="Dairy Products">
+                        </div>
+
+                        <div class="product-info">
+
+                            <small>Dairy</small>
+
+                            <h4>Fresh Dairy Pack</h4>
+
+                            <p>
+                                Quality milk and dairy products.
+                            </p>
+
+                            <div class="price">
+                                <span>₹249</span>
+                                <del>₹275</del>
+                            </div>
+
+                            <a href="products.html" class="product-btn">
+                                Add to Cart
+                                <i class="bi bi-cart-plus"></i>
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= WHY CHOOSE US ================= -->
+    <section class="why-section section-padding">
+
+        <div class="container">
+
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-6">
+
+                    <span class="small-title">
+                        WHY FRESHMART?
+                    </span>
+
+                    <h2>
+                        Making Your Shopping
+                        <span>Easy & Better</span>
+                    </h2>
+
+                    <p>
+                        We make everyday shopping simple by providing
+                        quality products, affordable prices and friendly
+                        service under one roof.
+                    </p>
+
+                    <a href="about.html" class="btn-main">
+                        Learn More
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                </div>
+
+                <div class="col-lg-6">
+
+                    <div class="why-grid">
+
+                        <div class="why-card">
+                            <i class="bi bi-award"></i>
+                            <h5>Best Quality</h5>
+                            <p>Carefully selected products.</p>
+                        </div>
+
+                        <div class="why-card">
+                            <i class="bi bi-wallet2"></i>
+                            <h5>Affordable Prices</h5>
+                            <p>Great products at great prices.</p>
+                        </div>
+
+                        <div class="why-card">
+                            <i class="bi bi-truck"></i>
+                            <h5>Fast Delivery</h5>
+                            <p>Quick and convenient delivery.</p>
+                        </div>
+
+                        <div class="why-card">
+                            <i class="bi bi-headset"></i>
+                            <h5>Friendly Service</h5>
+                            <p>We are always happy to help.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= CTA ================= -->
+    <section class="cta-section">
+
+        <div class="container text-center">
+
+            <h2>Ready For Your Next Shopping?</h2>
+
+            <p>
+                Discover fresh products and amazing offers today.
+            </p>
+
+            <a href="products.html" class="btn-main">
+                Start Shopping
+                <i class="bi bi-arrow-right"></i>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+
+        <div class="container">
+
+
+            <div class="row g-4">
+
+
+                <div class="col-lg-4">
+
+                    <h3>
+
+                        <i class="bi bi-cart3"></i>
+
+                        Fresh<span>Mart</span>
+
+                    </h3>
+
+
+                    <p>
+
+                        Your trusted supermarket for fresh,
+                        quality and affordable products.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="col-6 col-lg-2">
+
+                    <h5>
+                        Quick Links
+                    </h5>
+
+
+                    <a href="index.html">
+                        Home
+                    </a>
+
+                    <a href="about.html">
+                        About
+                    </a>
+
+                    <a href="products.html">
+                        Products
+                    </a>
+
+                    <a href="gallery.html">
+                        Gallery
+                    </a>
+                    <a href="contact.html">
+                        contact
+                    </a>
+
+                </div>
+
+
+
+                <div class="col-6 col-lg-2">
+
+                    <h5>
+                        Categories
+                    </h5>
+
+
+                    <a href="#products">
+                        Fruits
+                    </a>
+
+                    <a href="#products">
+                        Vegetables
+                    </a>
+
+                    <a href="#products">
+                        Dairy
+                    </a>
+
+                    <a href="#products">
+                        Grocery
+                    </a>
+
+                </div>
+
+
+
+                <div class="col-lg-4">
+
+                    <h5>
+                        Contact
+                    </h5>
+
+
+                    <p>
+
+                        <i class="bi bi-geo-alt"></i>
+
+                        Hyderabad, Telangana
+
+                    </p>
+
+
+                    <p>
+
+                        <i class="bi bi-telephone"></i>
+
+                        +91 98765 43210
+
+                    </p>
+
+
+                    <p>
+
+                        <i class="bi bi-envelope"></i>
+
+                        freshmart@gmail.com
+
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+
+            <hr>
+
+
+            <div class="footer-bottom">
+
+
+                <p>
+
+                    © 2026 FreshMart Supermarket.
+                    All Rights Reserved.
+
+                </p>
+
+
+                <div>
+
+                    <i class="bi bi-facebook"></i>
+
+                    <i class="bi bi-instagram"></i>
+
+                    <i class="bi bi-whatsapp"></i>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </footer>

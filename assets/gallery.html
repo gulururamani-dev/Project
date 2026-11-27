@@ -1,0 +1,1327 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gallery | FreshMart Supermarket</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Gallery CSS -->
+    <link rel="stylesheet" href="css/gallery.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =================================================
+         NAVBAR
+    ================================================== -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">
+
+                <i class="bi bi-cart3"></i>
+
+                Fresh<span>Mart</span>
+
+            </a>
+
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <div
+                class="collapse navbar-collapse"
+                id="mainNavbar">
+
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="index.html">
+
+                            Home
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="about.html">
+
+                            About
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="products.html">
+
+                            Products
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link active"
+                            href="gallery.html">
+
+                            Gallery
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="contact.html">
+
+                            Contact
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item ms-lg-3">
+
+                        <a
+                            href="products.html"
+                            class="cart-btn">
+
+                            <i class="bi bi-cart"></i>
+
+                            Shop Now
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- =================================================
+         GALLERY HERO
+    ================================================== -->
+
+    <section class="gallery-hero">
+
+        <div class="gallery-overlay"></div>
+
+        <div class="container">
+
+            <div class="gallery-hero-content">
+
+                <span>
+
+                    <i class="bi bi-images"></i>
+
+                    FRESHMART GALLERY
+
+                </span>
+
+
+                <h1>
+
+                    Explore Our
+                    <strong>Fresh World</strong>
+
+                </h1>
+
+
+                <p>
+
+                    Take a visual tour of FreshMart and
+                    discover our fresh products, modern
+                    store, welcoming atmosphere and
+                    everyday shopping experience.
+
+                </p>
+
+
+                <div class="breadcrumb-area">
+
+                    <a href="index.html">
+
+                        Home
+
+                    </a>
+
+                    <i class="bi bi-chevron-right"></i>
+
+                    <span>
+
+                        Gallery
+
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         GALLERY INTRO
+    ================================================== -->
+
+    <section class="gallery-intro section-padding">
+
+        <div class="container">
+
+            <div class="section-heading text-center">
+
+                <span>
+
+                    OUR COLLECTION
+
+                </span>
+
+
+                <h2>
+
+                    A Glimpse Inside
+                    <strong>FreshMart</strong>
+
+                </h2>
+
+
+                <p>
+
+                    From fresh fruits and vegetables to
+                    our clean store environment, explore
+                    the FreshMart experience through our
+                    gallery.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 FILTER BUTTONS
+            ================================================== -->
+
+            <div class="gallery-filters">
+
+                <button
+                    class="filter-btn active"
+                    data-filter="all">
+
+                    All
+
+                </button>
+
+
+                <button
+                    class="filter-btn"
+                    data-filter="store">
+
+                    Store
+
+                </button>
+
+
+                <button
+                    class="filter-btn"
+                    data-filter="fruits">
+
+                    Fruits
+
+                </button>
+
+
+                <button
+                    class="filter-btn"
+                    data-filter="vegetables">
+
+                    Vegetables
+
+                </button>
+
+
+                <button
+                    class="filter-btn"
+                    data-filter="products">
+
+                    Products
+
+                </button>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 GALLERY GRID
+            ================================================== -->
+
+            <div class="row g-4 gallery-grid">
+
+
+                <!-- IMAGE 1 -->
+
+                <div
+                    class="col-sm-6 col-lg-4 gallery-item"
+                    data-category="store">
+
+                    <div class="gallery-card">
+
+                        <img
+                            src="images/store-1.jpg"
+                            alt="FreshMart Store">
+
+                        <div class="gallery-overlay-card">
+
+                            <div>
+
+                                <span>
+                                    FreshMart
+                                </span>
+
+                                <h4>
+                                    Our Store
+                                </h4>
+
+                            </div>
+
+
+                            <button
+                                class="view-btn"
+                                data-image="images/store-1.jpg"
+                                data-title="FreshMart Store">
+
+                                <i class="bi bi-zoom-in"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- IMAGE 2 -->
+
+                <div
+                    class="col-sm-6 col-lg-4 gallery-item"
+                    data-category="store">
+
+                    <div class="gallery-card">
+
+                        <img
+                            src="images/store-2.jpg"
+                            alt="FreshMart Supermarket">
+
+                        <div class="gallery-overlay-card">
+
+                            <div>
+
+                                <span>
+                                    FreshMart
+                                </span>
+
+                                <h4>
+                                    Shopping Area
+                                </h4>
+
+                            </div>
+
+
+                            <button
+                                class="view-btn"
+                                data-image="images/store-2.jpg"
+                                data-title="FreshMart Shopping Area">
+
+                                <i class="bi bi-zoom-in"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- IMAGE 3 -->
+
+                <div
+                    class="col-sm-6 col-lg-4 gallery-item"
+                    data-category="fruits">
+
+                    <div class="gallery-card">
+
+                        <img
+                            src="images/fruits.jpg"
+                            alt="Fresh Fruits">
+
+                        <div class="gallery-overlay-card">
+
+                            <div>
+
+                                <span>
+                                    Fresh Products
+                                </span>
+
+                                <h4>
+                                    Fresh Fruits
+                                </h4>
+
+                            </div>
+
+
+                            <button
+                                class="view-btn"
+                                data-image="images/fruits.jpg"
+                                data-title="Fresh Fruits">
+
+                                <i class="bi bi-zoom-in"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- IMAGE 4 -->
+
+                <div
+                    class="col-sm-6 col-lg-4 gallery-item"
+                    data-category="vegetables">
+
+                    <div class="gallery-card">
+
+                        <img
+                            src="images/vegetables.jpg"
+                            alt="Fresh Vegetables">
+
+                        <div class="gallery-overlay-card">
+
+                            <div>
+
+                                <span>
+                                    Farm Fresh
+                                </span>
+
+                                <h4>
+                                    Fresh Vegetables
+                                </h4>
+
+                            </div>
+
+
+                            <button
+                                class="view-btn"
+                                data-image="images/vegetables.jpg"
+                                data-title="Fresh Vegetables">
+
+                                <i class="bi bi-zoom-in"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- IMAGE 5 -->
+
+                <div
+                    class="col-sm-6 col-lg-4 gallery-item"
+                    data-category="products">
+
+                    <div class="gallery-card">
+
+                        <img
+                            src="images/grocery.jpg"
+                            alt="Grocery Products">
+
+                        <div class="gallery-overlay-card">
+
+                            <div>
+
+                                <span>
+                                    Daily Essentials
+                                </span>
+
+                                <h4>
+                                    Grocery Collection
+                                </h4>
+
+                            </div>
+
+
+                            <button
+                                class="view-btn"
+                                data-image="images/grocery.jpg"
+                                data-title="Grocery Collection">
+
+                                <i class="bi bi-zoom-in"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- IMAGE 6 -->
+
+                <div
+                    class="col-sm-6 col-lg-4 gallery-item"
+                    data-category="products">
+
+                    <div class="gallery-card">
+
+                        <img
+                            src="images/dairy.jpg"
+                            alt="Dairy Products">
+
+                        <div class="gallery-overlay-card">
+
+                            <div>
+
+                                <span>
+                                    Quality Products
+                                </span>
+
+                                <h4>
+                                    Dairy Products
+                                </h4>
+
+                            </div>
+
+
+                            <button
+                                class="view-btn"
+                                data-image="images/dairy.jpg"
+                                data-title="Dairy Products">
+
+                                <i class="bi bi-zoom-in"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- IMAGE 7 -->
+
+                <div
+                    class="col-sm-6 col-lg-4 gallery-item"
+                    data-category="products">
+
+                    <div class="gallery-card">
+
+                        <img
+                            src="images/beverages.jpg"
+                            alt="Fresh Beverages">
+
+                        <div class="gallery-overlay-card">
+
+                            <div>
+
+                                <span>
+                                    Refresh Yourself
+                                </span>
+
+                                <h4>
+                                    Beverages
+                                </h4>
+
+                            </div>
+
+
+                            <button
+                                class="view-btn"
+                                data-image="images/beverages.jpg"
+                                data-title="Fresh Beverages">
+
+                                <i class="bi bi-zoom-in"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- IMAGE 8 -->
+
+                <div
+                    class="col-sm-6 col-lg-4 gallery-item"
+                    data-category="products">
+
+                    <div class="gallery-card">
+
+                        <img
+                            src="images/personal-care.jpg"
+                            alt="Personal Care Products">
+
+                        <div class="gallery-overlay-card">
+
+                            <div>
+
+                                <span>
+                                    Everyday Care
+                                </span>
+
+                                <h4>
+                                    Personal Care
+                                </h4>
+
+                            </div>
+
+
+                            <button
+                                class="view-btn"
+                                data-image="images/personal-care.jpg"
+                                data-title="Personal Care Products">
+
+                                <i class="bi bi-zoom-in"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- IMAGE 9 -->
+
+                <div
+                    class="col-sm-6 col-lg-4 gallery-item"
+                    data-category="store">
+
+                    <div class="gallery-card">
+
+                        <img
+                            src="images/checkout.jpg"
+                            alt="FreshMart Checkout">
+
+                        <div class="gallery-overlay-card">
+
+                            <div>
+
+                                <span>
+                                    Easy Shopping
+                                </span>
+
+                                <h4>
+                                    Checkout Area
+                                </h4>
+
+                            </div>
+
+
+                            <button
+                                class="view-btn"
+                                data-image="images/checkout.jpg"
+                                data-title="FreshMart Checkout">
+
+                                <i class="bi bi-zoom-in"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         SHOPPING EXPERIENCE
+    ================================================== -->
+
+    <section class="experience-section section-padding">
+
+        <div class="container">
+
+            <div class="row align-items-center g-5">
+
+
+                <div class="col-lg-6">
+
+                    <div class="experience-image">
+
+                        <img
+                            src="images/store-2.jpg"
+                            alt="FreshMart Shopping Experience">
+
+                        <div class="experience-badge">
+
+                            <i class="bi bi-heart-fill"></i>
+
+                            <strong>
+                                Customer First
+                            </strong>
+
+                            <span>
+                                Always
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="col-lg-6">
+
+                    <div class="experience-content">
+
+                        <span class="small-title">
+
+                            THE FRESHMART EXPERIENCE
+
+                        </span>
+
+
+                        <h2>
+
+                            More Than Just A
+                            <strong>Supermarket</strong>
+
+                        </h2>
+
+
+                        <p>
+
+                            At FreshMart, we want every shopping
+                            visit to be simple, comfortable and
+                            enjoyable. Our store is carefully
+                            organized so you can find your
+                            everyday essentials with ease.
+
+                        </p>
+
+
+                        <div class="experience-list">
+
+
+                            <div class="experience-point">
+
+                                <div class="point-icon">
+
+                                    <i class="bi bi-check-lg"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <h5>
+                                        Fresh Every Day
+                                    </h5>
+
+                                    <p>
+                                        Carefully selected fresh
+                                        products for your family.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="experience-point">
+
+                                <div class="point-icon">
+
+                                    <i class="bi bi-check-lg"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <h5>
+                                        Clean & Organized
+                                    </h5>
+
+                                    <p>
+                                        A comfortable and hygienic
+                                        shopping environment.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="experience-point">
+
+                                <div class="point-icon">
+
+                                    <i class="bi bi-check-lg"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <h5>
+                                        Friendly Service
+                                    </h5>
+
+                                    <p>
+                                        Our team is always ready
+                                        to help you.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <a
+                            href="products.html"
+                            class="experience-btn">
+
+                            Explore Products
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         CTA
+    ================================================== -->
+
+    <section class="gallery-cta">
+
+        <div class="container text-center">
+
+            <span>
+
+                FRESH PRODUCTS. HAPPY SHOPPING.
+
+            </span>
+
+
+            <h2>
+
+                See Something
+                <strong>You Like?</strong>
+
+            </h2>
+
+
+            <p>
+
+                Explore our products and discover
+                quality, freshness and value.
+
+            </p>
+
+
+            <a
+                href="products.html"
+                class="btn-main">
+
+                Shop Products
+
+                <i class="bi bi-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         FOOTER
+    ================================================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="row g-4">
+
+
+                <div class="col-lg-4">
+
+                    <h3>
+
+                        <i class="bi bi-cart3"></i>
+
+                        Fresh<span>Mart</span>
+
+                    </h3>
+
+
+                    <p>
+
+                        Your trusted supermarket for fresh,
+                        quality and affordable products.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="col-6 col-lg-2">
+
+                    <h5>
+                        Quick Links
+                    </h5>
+
+                    <a href="index.html">
+                        Home
+                    </a>
+
+                    <a href="about.html">
+                        About
+                    </a>
+
+                    <a href="products.html">
+                        Products
+                    </a>
+                     <a href="gallery.html">
+                        gallery
+                    </a>
+
+                    <a href="contact.html">
+                        Contact
+                    </a>
+
+                </div>
+
+
+
+                <div class="col-6 col-lg-2">
+
+                    <h5>
+                        Categories
+                    </h5>
+
+                    <a href="products.html">
+                        Fruits
+                    </a>
+
+                    <a href="products.html">
+                        Vegetables
+                    </a>
+
+                    <a href="products.html">
+                        Dairy
+                    </a>
+
+                    <a href="products.html">
+                        Grocery
+                    </a>
+
+                </div>
+
+
+
+                <div class="col-lg-4">
+
+                    <h5>
+                        Contact
+                    </h5>
+
+
+                    <p>
+                        <i class="bi bi-geo-alt"></i>
+                        Hyderabad, Telangana
+                    </p>
+
+
+                    <p>
+                        <i class="bi bi-telephone"></i>
+                        +91 98765 43210
+                    </p>
+
+
+                    <p>
+                        <i class="bi bi-envelope"></i>
+                        freshmart@gmail.com
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <hr>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 FreshMart Supermarket.
+                    All Rights Reserved.
+                </p>
+
+
+                <div>
+
+                    <i class="bi bi-facebook"></i>
+
+                    <i class="bi bi-instagram"></i>
+
+                    <i class="bi bi-whatsapp"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =================================================
+         IMAGE MODAL
+    ================================================== -->
+
+    <div
+        class="image-modal"
+        id="imageModal">
+
+        <button
+            class="modal-close"
+            id="modalClose">
+
+            <i class="bi bi-x-lg"></i>
+
+        </button>
+
+
+        <div class="modal-image-container">
+
+            <img
+                id="modalImage"
+                src=""
+                alt="Gallery Image">
+
+
+            <div
+                class="modal-caption"
+                id="modalCaption">
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =================================================
+         BOOTSTRAP JS
+    ================================================== -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+
+    <!-- COMMON JS -->
+
+    <script src="js/script.js"></script>
+
+
+
+    <!-- =================================================
+         GALLERY JAVASCRIPT
+    ================================================== -->
+
+    <script>
+
+        document.addEventListener(
+            "DOMContentLoaded",
+            function () {
+
+
+                /* =========================================
+                   FILTER
+                ========================================= */
+
+                const filterButtons =
+                    document.querySelectorAll(".filter-btn");
+
+                const galleryItems =
+                    document.querySelectorAll(".gallery-item");
+
+
+                filterButtons.forEach(function (button) {
+
+                    button.addEventListener(
+                        "click",
+                        function () {
+
+                            const filter =
+                                this.getAttribute("data-filter");
+
+
+                            filterButtons.forEach(function (btn) {
+
+                                btn.classList.remove("active");
+
+                            });
+
+
+                            this.classList.add("active");
+
+
+                            galleryItems.forEach(function (item) {
+
+                                const category =
+                                    item.getAttribute(
+                                        "data-category"
+                                    );
+
+
+                                if (
+                                    filter === "all" ||
+                                    category === filter
+                                ) {
+
+                                    item.style.display = "block";
+
+                                    setTimeout(function () {
+
+                                        item.classList.add(
+                                            "show-item"
+                                        );
+
+                                    }, 20);
+
+                                } else {
+
+                                    item.classList.remove(
+                                        "show-item"
+                                    );
+
+                                    item.style.display = "none";
+
+                                }
+
+                            });
+
+                        }
+                    );
+
+                });
+
+
+
+                /* =========================================
+                   IMAGE MODAL
+                ========================================= */
+
+                const modal =
+                    document.getElementById("imageModal");
+
+                const modalImage =
+                    document.getElementById("modalImage");
+
+                const modalCaption =
+                    document.getElementById("modalCaption");
+
+                const modalClose =
+                    document.getElementById("modalClose");
+
+                const viewButtons =
+                    document.querySelectorAll(".view-btn");
+
+
+                viewButtons.forEach(function (button) {
+
+                    button.addEventListener(
+                        "click",
+                        function () {
+
+                            const image =
+                                this.getAttribute("data-image");
+
+                            const title =
+                                this.getAttribute("data-title");
+
+
+                            modalImage.src = image;
+
+                            modalCaption.textContent = title;
+
+                            modal.classList.add("show");
+
+                            document.body.style.overflow =
+                                "hidden";
+
+                        }
+                    );
+
+                });
+
+
+                function closeModal() {
+
+                    modal.classList.remove("show");
+
+                    document.body.style.overflow =
+                        "auto";
+
+                }
+
+
+                modalClose.addEventListener(
+                    "click",
+                    closeModal
+                );
+
+
+                modal.addEventListener(
+                    "click",
+                    function (event) {
+
+                        if (event.target === modal) {
+
+                            closeModal();
+
+                        }
+
+                    }
+                );
+
+
+                document.addEventListener(
+                    "keydown",
+                    function (event) {
+
+                        if (event.key === "Escape") {
+
+                            closeModal();
+
+                        }
+
+                    }
+                );
+
+            }
+        );
+
+    </script>
+
+
+</body>
+
+</html>
+
